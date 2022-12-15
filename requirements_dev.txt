@@ -28,7 +28,9 @@ click==8.1.3
     #   bumpver
     #   pip-tools
 cloudpickle==2.2.0
-    # via gym
+    # via
+    #   gym
+    #   stable-baselines3
 colorama==0.4.6
     # via bumpver
 commonmark==0.9.1
@@ -51,14 +53,16 @@ graph-jsp-env==0.1.0
     #   graph-jsp-utils
 graph-jsp-utils==0.0.1
     # via graph-jsp-examples (pyproject.toml)
-gym==0.26.2
-    # via graph-jsp-env
-gym-notices==0.0.8
-    # via gym
+gym==0.21
+    # via
+    #   graph-jsp-env
+    #   stable-baselines3
 idna==3.4
     # via requests
-importlib-metadata==5.1.0
-    # via gym
+imageio==2.22.4
+    # via graph-jsp-examples (pyproject.toml)
+importlib-metadata==4.13.0
+    # via stable-baselines3
 iniconfig==1.1.1
     # via pytest
 inquirer==3.0.0
@@ -75,6 +79,7 @@ matplotlib==3.6.2
     # via
     #   graph-jsp-env
     #   graph-jsp-utils
+    #   stable-baselines3
 mccabe==0.7.0
     # via flake8
 mypy==0.991
@@ -92,10 +97,12 @@ numpy==1.23.5
     #   graph-jsp-examples (pyproject.toml)
     #   graph-jsp-utils
     #   gym
+    #   imageio
     #   matplotlib
     #   opencv-python
     #   ortools
     #   pandas
+    #   stable-baselines3
 opencv-python==4.6.0.66
     # via graph-jsp-env
 ortools==9.5.2237
@@ -111,6 +118,7 @@ pandas==1.5.2
     # via
     #   graph-jsp-env
     #   graph-jsp-utils
+    #   stable-baselines3
 pathlib2==2.3.7.post1
     # via bumpver
 pathspec==0.10.3
@@ -118,7 +126,9 @@ pathspec==0.10.3
 pep517==0.13.0
     # via build
 pillow==9.3.0
-    # via matplotlib
+    # via
+    #   imageio
+    #   matplotlib
 pip-tools==6.12.0
     # via graph-jsp-examples (pyproject.toml)
 platformdirs==2.6.0
@@ -160,6 +170,8 @@ rich==12.6.0
     #   graph-jsp-env
     #   graph-jsp-examples (pyproject.toml)
     #   graph-jsp-utils
+sb3-contrib==1.6.2
+    # via graph-jsp-examples (pyproject.toml)
 six==1.16.0
     # via
     #   blessed
@@ -167,6 +179,10 @@ six==1.16.0
     #   python-dateutil
 soupsieve==2.3.2.post1
     # via beautifulsoup4
+stable-baselines3==1.6.2
+    # via
+    #   graph-jsp-examples (pyproject.toml)
+    #   sb3-contrib
 tenacity==8.1.0
     # via plotly
 toml==0.10.2
@@ -179,10 +195,13 @@ tomli==2.0.1
     #   mypy
     #   pep517
     #   pytest
+torch==1.13.0
+    # via stable-baselines3
 typing-extensions==4.4.0
     # via
     #   black
     #   mypy
+    #   torch
 urllib3==1.26.13
     # via requests
 wcwidth==0.2.5

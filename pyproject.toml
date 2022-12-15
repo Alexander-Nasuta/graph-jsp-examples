@@ -20,8 +20,11 @@ dependencies = [
     "numpy",
     "ortools",
     "inquirer",
+    "stable_baselines3",
+    "sb3-contrib",
+    "imageio",
     "graph-jsp-env",
-    "graph-jsp-utils"
+    "graph-jsp-utils",
 ]
 requires-python = ">=3.9"
 

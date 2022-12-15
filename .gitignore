@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+*.meta.json
+*.gif
+*.mp4
+
 main.py
 # C extensions
 *.so
