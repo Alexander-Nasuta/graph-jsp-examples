@@ -23,7 +23,7 @@ def random_action_loop(jsp_instance: np.ndarray) -> None:
         state, reward, done, info = env.step(action)
         # chose the visualisation you want to see using the show parameter
         # note: gantt_window and graph_window use a lot of resources
-        # env.render(show=["gantt_console", "gantt_window", "graph_console", "graph_window"])
+        env.render(show=["gantt_console", "gantt_window", "graph_console", "graph_window"])
         # env.render()
         score += reward
 
@@ -31,7 +31,7 @@ def random_action_loop(jsp_instance: np.ndarray) -> None:
     env.render(show=["gantt_console", "graph_console"])
     # console + window rendering
     # env.render(wait=1_000)  # render window closes automatically after 1 seconds
-    # env.render(wait=None) # render window closes when any button is pressed (when the render window is focused)
+    env.render(wait=None) # render window closes when any button is pressed (when the render window is focused)
 
 
 if __name__ == '__main__':

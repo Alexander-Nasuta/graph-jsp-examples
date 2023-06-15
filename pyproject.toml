@@ -23,6 +23,14 @@ dependencies = [
     "stable_baselines3",
     "sb3-contrib",
     "imageio",
+
+    "wandb",
+
+    #"ray",
+    #"tabulate",
+    #"dm-tree",
+    #"scipy",
+
     "graph-jsp-env",
     "graph-jsp-utils",
 ]

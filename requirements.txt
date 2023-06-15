@@ -38,6 +38,8 @@ gym==0.21
     #   stable-baselines3
 idna==3.4
     # via requests
+imageio==2.31.1
+    # via graph-jsp-examples (pyproject.toml)
 importlib-metadata==4.13.0
     # via stable-baselines3
 inquirer==3.0.0
@@ -60,6 +62,7 @@ numpy==1.23.5
     #   graph-jsp-examples (pyproject.toml)
     #   graph-jsp-utils
     #   gym
+    #   imageio
     #   matplotlib
     #   opencv-python
     #   ortools
@@ -79,7 +82,9 @@ pandas==1.5.2
     #   graph-jsp-utils
     #   stable-baselines3
 pillow==9.3.0
-    # via matplotlib
+    # via
+    #   imageio
+    #   matplotlib
 plotly==5.11.0
     # via graph-jsp-env
 protobuf==4.21.12
